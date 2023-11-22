@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>셀렉트 컴포넌트</title>
+   <!-- 상대경로로 components.css 연결 -->
+   <link rel="stylesheet" href="./../../styles/components.css">
+</head>
+
+<body>
+
+   <div class="select_container">
+      <button class="select_btn" data-val="onOff">
+
+         <ul>
+            <li aria-hidden class="global_icon" data-val="onOff"></li>
+            <li class="state_lang" data-val="onOff">한국어</li>
+            <li aria-hidden class="select_down_icon" data-val="onOff"></li>
+         </ul>
+
+         <div class="select_lang hide_none">
+            <div class="check_icon_wrapper">
+               <!-- span태그로 충분한가? -->
+               <span class="check_icon ko"></span>
+               <span class="check_icon en hide_hidden"></span>
+            </div>
+
+            <div role="list" class="lang">
+               <span role="listitem" class="lang_ko">한국어</span>
+               <span role="listitem" class="lang_en" lang="en-US">English</span>
+            </div>
+         </div>
+
+      </button>
+   </div>
+
+   <script src="./index.js"></script>
+</body>
+
+</html>
